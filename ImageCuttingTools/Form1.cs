@@ -28,7 +28,7 @@ namespace ImageCuttingTools
 
             string[] filesPath = ofd.FileNames;
 
-            //1txtChoicePath.Text=
+            //12txtChoicePath.Text=
         }
     }
 }
