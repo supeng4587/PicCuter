@@ -38,7 +38,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtSavePath = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSaveFolder = new System.Windows.Forms.TextBox();
+            this.btnCleanChoice = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnChoice
@@ -78,6 +79,7 @@
             this.btnSavePath.TabIndex = 3;
             this.btnSavePath.Text = "存储路径";
             this.btnSavePath.UseVisualStyleBackColor = true;
+            this.btnSavePath.Click += new System.EventHandler(this.btnSavePath_Click);
             // 
             // btnExecuteCutting
             // 
@@ -87,6 +89,7 @@
             this.btnExecuteCutting.TabIndex = 4;
             this.btnExecuteCutting.Text = "开始缩放";
             this.btnExecuteCutting.UseVisualStyleBackColor = true;
+            this.btnExecuteCutting.Click += new System.EventHandler(this.btnExecuteCutting_Click);
             // 
             // btnOpenSavePath
             // 
@@ -133,21 +136,32 @@
             this.txtSavePath.Size = new System.Drawing.Size(500, 140);
             this.txtSavePath.TabIndex = 10;
             // 
-            // textBox1
+            // txtSaveFolder
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(198, 140);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 60);
-            this.textBox1.TabIndex = 11;
+            this.txtSaveFolder.Enabled = false;
+            this.txtSaveFolder.Location = new System.Drawing.Point(198, 140);
+            this.txtSaveFolder.Multiline = true;
+            this.txtSaveFolder.Name = "txtSaveFolder";
+            this.txtSaveFolder.Size = new System.Drawing.Size(120, 60);
+            this.txtSaveFolder.TabIndex = 11;
+            // 
+            // btnCleanChoice
+            // 
+            this.btnCleanChoice.Location = new System.Drawing.Point(794, 30);
+            this.btnCleanChoice.Name = "btnCleanChoice";
+            this.btnCleanChoice.Size = new System.Drawing.Size(75, 20);
+            this.btnCleanChoice.TabIndex = 12;
+            this.btnCleanChoice.Text = "清空";
+            this.btnCleanChoice.UseVisualStyleBackColor = true;
+            this.btnCleanChoice.Click += new System.EventHandler(this.btnCleanChoice_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 461);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnCleanChoice);
+            this.Controls.Add(this.txtSaveFolder);
             this.Controls.Add(this.txtSavePath);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -177,7 +191,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtSavePath;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSaveFolder;
+        private System.Windows.Forms.Button btnCleanChoice;
     }
 }
 
